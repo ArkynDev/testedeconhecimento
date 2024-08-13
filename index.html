@@ -14,18 +14,34 @@
 </head>
 <body>
     <main>
-        <section>
-            <div>
-                <select name="Discipline" id="Discipline">
-                    <option value="Portugues">Português</option>
-                    <option value="Ingles">Inglês</option>
-                </select>
-                <select name="Level" id="Level">
-                    <option value="5">5°</option>
-                    <option value="6">6°</option>
-                </select>
-                <button>Gerar</button>
-
+        <section id="s1">
+            <div id="s1-inputs">
+                <div>
+                    <select name="Discipline" id="Discipline" class="b-radius">
+                        <option value="Português" selected>Português</option>
+                        <option value="Inglês">Inglês</option>
+                    </select>
+                    <select name="Level" id="Level" class="b-radius">
+                        <option value="Escolha uma disciplina">...</option>
+                    </select>
+                    <select name="nQuerstions" id="nQuerstions">
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+                <button class="b-radius" id="fetchDataButton">Gerar</button>
+            </div>
+            <div id="s1-display">
+                <div id="s1-display-btns"></div>
                 <div id="dataDisplay"></div>
             </div>
         </section>
